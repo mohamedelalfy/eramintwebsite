@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- COMPONENT BACKGROUND START -->
+    <!--
+      To make background__main light colored add .theme--colored to .component-background
+    -->
+    <div class="component-background theme--colored">
+        <div class="background__header">
+        </div>
+        <div class="background__main">
+            <div class="background__shape id--1"></div>
+            <div class="background__shape id--2"></div>
+            <div class="background__shape id--3"></div>
+        </div>
+    </div>
+    <!-- COMPONENT BACKGROUND END -->
+    <!-- COMPONENT SECTION START -->
+    <div class="component-section">
+        <!-- COMPONENT HEADER INNER START -->
+        <!--
+			To change logo replace value in .header-inner__logo img[src]
+			To create menu make li inside ul and put .header-inner__menu__item in it
+			If you want to add sub links put the menu of those links after .header-inner__menu__item and gave the parent li .type--has-children
+			If you want to make li active give it .status--active
+		-->
+        <div class="component-header-inner">
+            <div class="header-inner__logo">
+                <a href="home.html"><img src="files/images/logo--colored.png" alt=""></a>
+            </div>
+            <div class="header-inner__menu" data-box="header-menu">
+                <div class="header-inner__menu__switch" data-switch="header-menu">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <ul>
+                    <li><a class="header-main__menu__item" href="home.html">home</a></li>
+                    <li><a class="header-main__menu__item" href="About.html">about</a></li>
+                    <li class="type--has-children">
+                        <button class="header-main__menu__item head">services</button>
+                        <ul>
+                            <li class="type--has-children">
+                                <button class="header-main__menu__item"> <a class="header-main__menu__item"
+                                        href="#development.html">development</a> </button>
+                                <!-- link to development.html-->
+                                <ul>
+                                    <li><a class="header-main__menu__item" href="app-development.html">app
+                                            development</a></li>
+                                    <li><a class="header-main__menu__item" href="web-development.html">web
+                                            development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="header-main__menu__item" href="graphic-design.html">graphic design</a></li>
+                            <li><a class="header-main__menu__item" href="marketing.html">marketing</a></li>
+                            <li><span class="header-main__menu__item">organization structure</span></li>
+                            <li><a class="header-main__menu__item" href="education.html">education</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="header-main__menu__item" href="portfolio.html">portfolio</a></li>
+                    <li><a class="header-main__menu__item" href="blogs.html">blog</a></li>
+                    <li><a class="header-main__menu__item" href="home.html#contact__us__content">contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-inner__search" data-box="header-search">
+
+                <div class="box-container">
+
+                    <div class="searsh-box">
+                        <input type="text" name="" class="searsh-text" placeholder="i'm looking for ... " />
+                        <a class="searsh-btn">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT HEADER INNER END -->
+    </div>
+    <!-- COMPONENT SECTION END -->
+    <!-- COMPONENT SECTION CONTAINER START -->
+    <div class="component-section-container">
+        <!-- COMPONENT BANNER INNER START -->
+        <div class="component-banner-inner">
+            <div class="banner-inner__image">
+                <img src="files/images/marketing-page.png" alt="">
+            </div>
+            <div class="banner-inner__content">
+                <div class="banner-inner__label">
+                    Marketing Service
+                </div>
+                <div class="banner-inner__title">
+                    We Provide Everything
+                    <br>Your Business Needs
+                </div>
+                <div class="banner-inner__description">
+                    Starting with research and analysis to the strategic part (STP), and the Tactical part (the
+                    marketing mix) and implementation with follow-up.
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT BANNER INNER END -->
+    </div>
+    <!-- COMPONENT SECTION CONTAINER END -->
+    <!-- COMPONENT SECTION BLOCKS START -->
+    <!--
+      The .component-section-blocks can have more than one .section-block
+      .section-block:nth-child(odd) are background-color: white
+      .section-block:nth-child(even) are background-color: light colored
+      to reverse that you must add .theme--colored to .component-section-blocks
+      The .section-block__items can have more than one .section-block__item
+      .section-block__item:nth-child(odd) are background-color: as .section-block parent 
+      .section-block__item:nth-child(even) are background-color: light colored if (odd) is white and white if (odd) is light colored
+      The .section-block__item have padding by default if you want to make fluid add .theme--fluid
+    -->
+    <div class="component-section-blocks">
+        <!-- SECTION BLOCK START -->
+        <div class="section-block">
+            <div class="section-block__items">
+                <!-- SECTION BLOCK ITEM START -->
+                <div class="section-block__item">
+                    <!-- COMPONENT DIVISION START -->
+                    <!--
+      To add division title put your text in .division__title and if you want to make any word bold put it in span
+    -->
+                    <div class="component-division">
+                        <div class="division__header">
+                            <div class="division__title">
+                                strategy
+                            </div>
+                        </div>
+                        <!-- COMPONENT CONTENT START -->
+                        <div class="component-content">
+                            <div class="content__description">
+                                Every business is established to get not only profits but maximum profits, the main tool
+                                to guarantee achieving this goal is to deeply understand customer needs and desires,
+                                defining accurate target segment/s, developing relevant differentiation points,
+                                designing and developing relevant products and services with suitable variety and mix.
+                                Pricing is an important factor in the game, calculating different types of costs and
+                                allocating it correctly is critical. Selecting the most suitable distribution model and
+                                communicating all of this through integrated marketing communication program is an easy
+                                task with EraMint.
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="component-content">
+                            <div class="content__image">
+                                <img src="files/images/sms.png" alt=" image content section not found">
+                            </div>
+                            <div class="content__title">
+                                SMS Marketing
+                            </div>
+                            <div class="content__description">
+                                With direct connection with the 3 operators in Egypt we offer a variety of SMS campaigns
+                                types: bulk SMS, mobile advertising, and Location Based Advertising. Bulk SMS is an SMS
+                                service based on existing categorized customer mobile numbers to send to, if you do not
+                                have any of your target customers data we recommend you to use the Mob Ad SMS campaigns
+                                to target customers by location, smart phone, and average monthly usage.
+                                <span>For accurate targeting with geographic location you may use the LBA SMS
+                                    service.</span>
+                            </div>
+
+                            <!-- drop us a message start -->
+                            <div class="subscribeMessage">
+                                <a href="#0" class="cd-popup-trigger" data-name="popup1">SUBSCRIBE1</a>
+
+                                <div class="cd-popup" role="alert" data-name="popup1">
+                                    <div class="cd-popup-container">
+                                        <div class="content">
+                                            <!-- COMPONENT FORM START -->
+                                            <div class="era__leave">
+                                                <img src="files/images/mint--left.png" alt="mint--left image not found">
+                                            </div>
+                                            <div class="component-form ">
+                                                <div class="form__title">
+                                                    Leave your contact info and we will get in touch
+                                                </div>
+                                                <form class="form__items" action="#">
+                                                    <div class="form__input ">
+                                                        <input type="text" placeholder="Your name">
+                                                        <input type="email" placeholder="Email Address">
+                                                        <input type="text" placeholder="Mobile number">
+                                                    </div>
+
+                                                    <div class="form__button">
+                                                        <input type="submit" value="Submit">
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                        <!-- COMPONENT FORM END -->
+
+                                        <a href="#0" class="cd-popup-close img-replace"></a>
+                                    </div> <!-- cd-popup-container -->
+                                </div> <!-- cd-popup -->
+                                <!-- partial -->
+
+                            </div>
+                            <!-- drop us a message end -->
+
+                        </div>
+                        <!-- COMPONENT CONTENT END -->
+                    </div>
+                    <!-- COMPONENT DIVISION END -->
+                </div>
+                <!-- SECTION BLOCK ITEM END -->
+                <!-- SECTION BLOCK ITEM START -->
+                <div class="section-block__item">
+                    <!-- COMPONENT DIVISION START -->
+                    <!--
+      To add division title put your text in .division__title and if you want to make any word bold put it in span
+    -->
+                    <div class="component-division">
+                        <div class="division__header">
+                            <div class="division__title">
+                                social media marketing
+                            </div>
+                        </div>
+                        <div class="division__main">
+                            <!-- COMPONENT SECTION MARKETING START -->
+
+                            <div class="component-sections-marketing ">
+                                <div class="sections-marketing__item">
+                                    <div class="sections-marketing__item__icon">
+                                        <img src="files/images/calendar.png"
+                                            alt="Educational Consultant image not found">
+                                    </div>
+                                    <div class="sections-marketing__item__content">
+                                        <div class="sections-marketing__item__title">social media manager</div>
+                                    </div>
+                                </div>
+
+                                <div class="sections-marketing__item">
+                                    <div class="sections-marketing__item__icon">
+                                        <img src="files/images/manager.png" alt=" Smart Learning image not found">
+                                    </div>
+                                    <div class="sections-marketing__item__content">
+                                        <div class="sections-marketing__item__title"> daily content</div>
+
+                                    </div>
+
+                                </div>
+                                <div class="sections-marketing__item">
+                                    <div class="sections-marketing__item__icon">
+
+                                        <img src="files/images/target.png" alt="Ai in Education image not found">
+
+                                    </div>
+                                    <div class="sections-marketing__item__content">
+                                        <div class="sections-marketing__item__title">targeted ads</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COMPONENT SECTION MARKETING START -->
+                        </div>
+                    </div>
+                    <!-- COMPONENT DIVISION END -->
+                    <div class="component-content">
+                        <div class="content__description">
+                            In the online business world today, having a strong social media presence is just as
+                            important, if not more important, than simply having a website. By interacting with your
+                            potential customers on social media, you’re not only generating buzz and spreading ideas but
+                            also building trust in your brand. On average, a business owner has to spend about 20 hours
+                            a week to manage their social media accounts, and more often than not, they are less than
+                            successful at generating quantifiable results. With Eramint, you will never have to worry
+                            about updating or growing your own social media accounts. We will professionally manage your
+                            business’s social media channels to increase engagement, implement effective lead generation
+                            campaigns and increase the social presence altogether!
+                        </div>
+                    </div>
+                </div>
+                <!-- SECTION BLOCK ITEM END -->
+                <!-- SECTION BLOCK ITEM START -->
+                <div class="section-block__item">
+                    <!-- COMPONENT DIVISION START -->
+                    <!--
+      To add division title put your text in .division__title and if you want to make any word bold put it in span
+    -->
+                    <div class="component-division">
+                        <div class="division__header">
+                            <div class="division__title">
+                                social presence
+                            </div>
+                        </div>
+                        <div class="division__main">
+                            <!-- COMPONENT CONTENT START -->
+                            <div class="component-content">
+                                <div class="content__description">
+                                    Other companies will run pointless automation that does little to increase your
+                                    sphere of influence online while still costing you a lot of money. With Eramint, you
+                                    are assigned a Social Media Manager who will only create content and posts relevant
+                                    to your business and your objective, and drive organic traffic to your brand. Want
+                                    to Generate more leads? Spread Awareness? Drive Sales? Let our Social Media Managers
+                                    give your business the social media presence it deserves!</span>
+                                </div>
+
+
+                                <!-- drop us a message start -->
+                                <div class="subscribeMessage">
+                                    <a href="#0" class="cd-popup-trigger" data-name="popup2">SUBSCRIBE</a>
+
+                                    <div class="cd-popup" role="alert" data-name="popup2">
+                                        <div class="cd-popup-container">
+                                            <div class="content">
+                                                <!-- COMPONENT FORM START -->
+                                                <div class="era__leave">
+                                                    <img src="files/images/mint--left.png"
+                                                        alt="mint--left image not found">
+                                                </div>
+                                                <div class="component-form ">
+                                                    <div class="form__title">
+                                                        Leave your contact info and we will get in touch
+                                                    </div>
+                                                    <form class="form__items" action="#">
+                                                        <div class="form__input ">
+                                                            <input type="text" placeholder="Your name">
+                                                            <input type="email" placeholder="Email Address">
+                                                            <input type="text" placeholder="Mobile number">
+                                                        </div>
+
+                                                        <div class="form__button">
+                                                            <input type="submit" value="Submit">
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                            <!-- COMPONENT FORM END -->
+
+                                            <a href="#0" class="cd-popup-close img-replace"></a>
+                                        </div> <!-- cd-popup-container -->
+                                    </div> <!-- cd-popup -->
+                                    <!-- partial -->
+
+                                </div>
+                                <!-- drop us a message end -->
+
+
+                            </div>
+                            <!-- COMPONENT CONTENT END -->
+                        </div>
+                    </div>
+                    <!-- COMPONENT DIVISION END -->
+
+                </div>
+                <!-- SECTION BLOCK ITEM END -->
+
+                <!-- SECTION BLOCK ITEM START -->
+                <div class="section-block__item">
+                    <!-- COMPONENT CLIENTS START -->
+                    <div class="component-clients">
+                        <section class="customer-logos slider">
+                            <div class="slide"><img src="files/images/clients/elahly.png"
+                                    alt="elahly logo img not found"></div>
+                            <div class="slide"><img src="files/images/clients/emaar-logo.png"
+                                    alt="emaar-logo img not found"></div>
+                            <div class="slide"><img src="files/images/clients/johnson.png"
+                                    alt="johnson logo img not found"></div>
+                            <div class="slide"><img src="files/images/clients/git-zone.png"
+                                    alt="git-zone logo img not found"></div>
+                            <div class="slide"><img src="files/images/clients/Kreaz-logo-1.png"
+                                    alt="Kreaz logo img not found"></div>
+                            <div class="slide"><img src="files/images/town-team.png" alt="town-team logo img not found">
+                            </div>
+                            <div class="slide"><img src="files/images/clients/rabea.png" alt="rabea logo img not found">
+                            </div>
+                        </section>
+                    </div>
+                    <!-- COMPONENT CLIENTS END -->
+                </div>
+                <!-- COMPONENT CONTENT END -->
+
+                <!-- COMPONENT CONTENT END -->
+            </div>
+            <!-- SECTION BLOCK END -->
+        </div>
+    </div>
+    <!-- SECTION BLOCK END -->
+    </div>
+    <!-- COMPONENT SECTION BLOCKS END -->
+    <!-- COMPONENT SECTION CHAT STARTzz -->
+    <div class="component-section-chat">
+        <div class="section-chat__container">
+            <!-- COMPONENT CHAT START -->
+            <!-- partial:index.partial.html -->
+            <div class="floating-chat ">
+                <!-- enter expand to status open-->
+                <i> <img src="files/images/conversation.png" alt=""></i>
+                <div class="chat">
+
+                    <div class="header ">
+                        <span class="title"> Chat </span>
+                        <button>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <ul class="messages">
+                        <li class="other">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+                            illo omnis. Cumiusto ut sapiente!</li>
+                        <li class="self">Lorem ipsum dolor sit.</li>
+                        <li class="other">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li class="self">Lorem, ipsum dolor.</li>
+                    </ul>
+
+                    <div class="footer">
+                        <div class="text-box" contenteditable="true" disabled="true"></div>
+                        <button id="sendMessage">send</button>
+                    </div>
+                </div>
+            </div>
+            <!-- partial -->
+            <!-- COMPONENT CHAT END -->
+        </div>
+    </div>
+    <!-- COMPONENT SECTION CHAT END zz-->
+    </div>
+    <!-- COMPONENT SECTION FOOTER END -->
+    <!-- COMPONENT SECTION FOOTER START -->
+    <div class="component-section-footer">
+        <!-- COMPONENT FOOTER START -->
+        <div class="component-footer">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            Eramint software house
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li>tanta ,97 hassan radwan ST <br>tanta</li>
+                                    <li><a href="#">+2 0101 985 0500</a></li>
+                                    <li><a href="home.html#contact__us__content">info@eramint.com</a></li>
+                                </ul>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            our services
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="app-development.html">mopile app development</a></li>
+                                    <li><a href="web-development.html">web application development</a></li>
+                                    <li><a href="graphic-design.html">graphic design</a></li>
+                                    <li><a href="marketing.html">marketing</a></li>
+                                    <li><a href="education.html">education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            about
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="About.html">company</a></li>
+                                    <li><a href="portfolio.html">portfolio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item theme--social">
+                    <div class="footer__links theme--social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT FOOTER END -->
+    </div>
+    <!-- COMPONENT SECTION FOOTER END -->
+    <script src="assets/js/switch-n-box.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://kit.fontawesome.com/780c8ebc4f.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="assets/js/Clients.js"></script>
+    <script src="assets/js/Popup.js"></script>
+
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'>
+    </script>
+    <script src="assets/js/chat.js"></script>
+</body>

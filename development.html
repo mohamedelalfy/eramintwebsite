@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- COMPONENT BACKGROUND START -->
+    <!--
+      To make background__main light colored add .theme--colored to .component-background
+    -->
+    <div class="component-background light">
+        <div class="background__header">
+        </div>
+        <div class="background__main">
+            <div class="background__shape id--1"></div>
+            <div class="background__shape id--2"></div>
+            <div class="background__shape id--3"></div>
+        </div>
+    </div>
+    <!-- COMPONENT BACKGROUND END -->
+    <!-- COMPONENT SECTION START -->
+    <div class="component-section">
+        <!-- COMPONENT HEADER INNER START -->
+        <!--
+			To change logo replace value in .header-inner__logo img[src]
+			To create menu make li inside ul and put .header-inner__menu__item in it
+			If you want to add sub links put the menu of those links after .header-inner__menu__item and gave the parent li .type--has-children
+			If you want to make li active give it .status--active
+		-->
+        <div class="component-header-inner">
+            <div class="header-inner__logo">
+                <a href="home.html"><img src="files/images/logo--colored.png" alt=""></a>
+            </div>
+            <div class="header-inner__menu" data-box="header-menu">
+                <div class="header-inner__menu__switch" data-switch="header-menu">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <ul>
+                    <li><a class="header-main__menu__item" href="home.html">home</a></li>
+                    <li><a class="header-main__menu__item" href="About.html">about</a></li>
+                    <li class="type--has-children">
+                            <button class="header-main__menu__item"> <a class="header-main__menu__item" href="#development.html">development</a> </button> <!-- link to development.html-->
+                            <ul>
+                            <li class="type--has-children">
+                                <a class="header-main__menu__item" href="development.html">development</a>
+                                <ul>
+                                    <li><a class="header-main__menu__item" href="app-development.html">app
+                                            development</a></li>
+                                    <li><a class="header-main__menu__item" href="web-development.html">web
+                                            development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="header-main__menu__item" href="graphic-design.html">graphic design</a></li>
+                            <li><a class="header-main__menu__item" href="marketing.html">marketing</a></li>
+                            <li><span class="header-main__menu__item">organization structure</span></li>
+                            <li><a class="header-main__menu__item" href="education.html">education</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="header-main__menu__item" href="portfolio.html">portfolio</a></li>
+                    <li><a class="header-main__menu__item" href="blogs.html">blog</a></li>
+                    <li><a class="header-main__menu__item" href="home.html#contact__us__content"> contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-inner__search" data-box="header-search">
+
+                <div class="box-container">
+
+                    <div class="searsh-box">
+                        <input type="text" name="" class="searsh-text" placeholder="i'm looking for ... " />
+                        <a class="searsh-btn">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT HEADER INNER END -->
+    </div>
+    <!-- COMPONENT SECTION END -->
+    <!-- COMPONENT SECTION CONTAINER START -->
+    <div class="component-section-container">
+        <!-- COMPONENT BANNER INNER START -->
+        <div class="component-banner-inner">
+            <div class="banner-inner__image">
+                <img src="files/images/Layer -82.png" alt="banner image not found">
+            </div>
+            <div class="banner-inner__content">
+                <div class="banner-inner__label">
+                    Services
+                </div>
+                <div class="banner-inner__title development">
+                    Development
+                </div>
+                <div class="banner-inner__description">
+                    Be closer to your customers, Build an unforgettable experience for them to sell your products faster
+                    and easier with a customized and friendly mobile application which is suitable for your customers to
+                    get more interactions.
+                </div>
+            </div>
+            <!-- COMPONENT BANNER INNER END -->
+        </div>
+        <!-- COMPONENT SECTION CONTAINER END -->
+        <!-- COMPONENT SECTION BLOCKS START -->
+        <!--
+      The .component-section-blocks can have more than one .section-block
+      .section-block:nth-child(odd) are background-color: white
+      .section-block:nth-child(even) are background-color: light colored
+      to reverse that you must add .theme--colored to .component-section-blocks
+      The .section-block__items can have more than one .section-block__item
+      .section-block__item:nth-child(odd) are background-color: as .section-block parent 
+      .section-block__item:nth-child(even) are background-color: light colored if (odd) is white and white if (odd) is light colored
+      The .section-block__item have padding by default if you want to make fluid add .theme--fluid
+    -->
+        <div class="component-section-blocks">
+            <!-- SECTION BLOCK START -->
+            <div class="section-block">
+                <div class="section-block__items">
+                    <!-- SECTION BLOCK ITEM START -->
+                    <div class="section-block__item">
+                        <!-- COMPONENT DIVISION START -->
+                        <!--
+      To add division title put your text in .division__title and if you want to make any word bold put it in span
+    -->
+                        <div class="component-division">
+                            <div class="division__header">
+                                <div class="division__title">
+                                    perfect service suite
+                                </div>
+                            </div>
+                            <!-- COMPONENT CONTENT START -->
+                            <div class="component-content">
+                                <div class="content__description">
+                                    We offer full-stack iOS, Android, and web development services together with
+                                    business analysis, quality assurance, and project management. We have all the
+                                    expertise you need to produce a fully fledged, stable, and scalable product.
+
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!-- COMPONENT CONTENT END -->
+                        </div>
+                        <!-- COMPONENT DIVISION END -->
+                    </div>
+                    <!-- SECTION BLOCK ITEM END -->
+                    <!-- SECTION BLOCK ITEM START -->
+                    <div class="section-block__item">
+
+                        <!-- COMPONENT SECTION DEVELOPMENT START -->
+
+                        <div class="component-sections-development">
+                            <div class="sections-development__items">
+                                <div class="sections-development__item">
+                                    <div class="sections-development__item__content">
+                                        <div class="sections-development__item__title">
+                                            android <br> development
+                                        </div>
+                                        <div class="sections-development__item__description">
+                                            We develop Android apps in Java and Kotlin. Given the broad range of devices
+                                            capable of running Android, we can create apps for everything from
+                                            smartwatches to smart TVs.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sections-development__item">
+                                    <div class="sections-development__item__content">
+                                        <div class="sections-development__item__title">
+                                            IOS
+                                            <br>
+                                            Development
+                                        </div>
+                                        <div class="sections-development__item__description">
+                                            We use modern programming languages, such as Swift and Objective-C, and
+                                            proven technologies and approaches that allow us to easily extend and scale
+                                            our products.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sections-development__item">
+                                    <div class="sections-development__item__content">
+                                        <div class="sections-development__item__title">
+                                            UI/UX
+                                            <br>
+                                            Design
+                                        </div>
+                                        <div class="sections-development__item__description">
+                                            We offer prototyping, branding, UI and UX design for web and mobile
+                                            products. Our approach is simple: we focus on how actual people will use our
+                                            clients’ products.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sections-development__item">
+                                    <div class="sections-development__item__content">
+                                        <div class="sections-development__item__title">
+                                            Web
+                                            <br>
+                                            Development
+                                        </div>
+                                        <div class="sections-development__item__description">
+                                            We provide both frontend and backend development services. Our web
+                                            development team specializes in Ruby on Rails, Go, JavaScript, AngularJS,
+                                            React, Node.js, and Elixir.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sections-development__item">
+                                    <div class="sections-development__item__content">
+                                        <div class="sections-development__item__title">
+                                            Project
+                                            <br>
+                                            Management
+                                        </div>
+                                        <div class="sections-development__item__description">
+                                            Our dedicated project managers ensure that all your expectations and
+                                            requirements are met, supervise your team’s performance, and make sure that
+                                            your product is delivered on schedule.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sections-development__item">
+                                    <div class="sections-development__item__content">
+                                        <div class="sections-development__item__title">
+                                            Quality
+                                            <br>
+                                            Assurence
+                                        </div>
+                                        <div class="sections-development__item__description">
+                                            Our quality control team verifies that developed functionality meets
+                                            business objectives and ensures that code is relatively bug-free by applying
+                                            manual and automated testing. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- COMPONENT SECTION DEVELOPMENT END -->
+                    </div>
+                    <!-- SECTION BLOCK ITEM END -->
+                    <!-- SECTION BLOCK ITEM START -->
+                    <div class="section-block__item">
+                        <!-- COMPONENT CONTENT START -->
+                        <div class="component-content">
+                            <div class="content__title">
+                                how it works
+                            </div>
+                        </div>
+                        <!-- COMPONENT SECTION PROCESS START -->
+                        <div class="component-process">
+                            <div class="process__steps">
+                                <div class="process__step">
+                                    <div class="process__step__icon">
+                                        <img src="files/images/process__discovery.png" alt="">
+                                    </div>
+                                    <h2 class="process__step__title">
+                                        Discovery
+                                    </h2>
+                                    <p class="process__step__description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium
+                                        nulla sint beatae, expedita quidem ex accusamus facere, ipsam officia commodi
+                                        vero, reiciendis nesciunt eius doloremque. Itaque voluptatem atque iste.
+                                    </p>
+                                </div>
+                                <div class="process__step">
+                                    <div class="process__step__icon">
+                                        <img src="files/images/process__features-n-architecture.png" alt="">
+                                    </div>
+                                    <h2 class="process__step__title">
+                                        Features&Architecture
+                                    </h2>
+                                    <p class="process__step__description">
+                                        We establish what features go into the product and how
+                                        they will work together. Here, we’re drafting a skeletal
+                                        framework for the app in the form of wireframes.
+                                    </p>
+                                </div>
+                                <div class="process__step">
+                                    <div class="process__step__icon">
+                                        <img src="files/images/process__design.png" alt="">
+                                    </div>
+                                    <h2 class="process__step__title">
+                                        Design
+                                    </h2>
+                                    <p class="process__step__description">
+                                        When it comes to frst impressions, it’s all about design.
+                                        We’ll put ourpassion for good design to work and we’ll
+                                        design all screens.
+                                    </p>
+                                </div>
+                                <div class="process__step">
+                                    <div class="process__step__icon">
+                                        <img src="files/images/process__development.png" alt="">
+                                    </div>
+                                    <h2 class="process__step__title">
+                                        Development
+                                    </h2>
+                                    <p class="process__step__description">
+                                        The development process is broken down into sprints based on
+                                        feature sets. Our agile-based development process will allow you to
+                                        regularly review and assess what we’re building.
+                                    </p>
+                                </div>
+                                <div class="process__step">
+                                    <div class="process__step__icon">
+                                        <img src="files/images/process__quality-assurance.png" alt="">
+                                    </div>
+                                    <h2 class="process__step__title">
+                                        Quality Assurance
+                                    </h2>
+                                    <p class="process__step__description">
+                                        After passing the Beta Build through a final round of QA and re </p>
+                                </div>
+                                <div class="process__step">
+                                    <div class="process__step__icon">
+                                        <img src="files/images/process__launch.png" alt="">
+                                    </div>
+                                    <h2 class="process__step__title">
+                                        Launch
+                                    </h2>
+                                    <p class="process__step__description">
+                                        After passing the Beta Build through a fnal round of QA and refne-
+                                        ments, we’ll have in our hands a Release Candidate Build. We can
+                                        either submit the app to the App Stores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- COMPONENT SECTION PROCESS END -->
+
+                    </div>
+                    <!-- SECTION BLOCK ITEM END -->
+
+                    <!-- SECTION BLOCK ITEM START -->
+                    <div class="section-block__item">
+                        <!-- COMPONENT CONTENT START -->
+                        <div class="component-content">
+                            <div class="content__title">
+                                got a project in mind?
+                            </div>
+                            <div class="content__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui quasi corporis
+                                nesciunt officiis!
+                            </div>
+
+                            <!-- drop us a message start -->
+                            <div class="DropMessage">
+                                <a href="#0" class="cd-popup-trigger" data-name="popup4">Drop us a message</a>
+
+                                <div class="cd-popup" data-name="popup4" role="alert">
+                                    <div class="cd-popup-container">
+                                        <div class="content">
+                                            <!-- COMPONENT FORM START -->
+                                            <div class="era__leave">
+                                                <img src="files/images/mint--left.png" alt="mint--left image not found">
+                                            </div>
+                                            <div class="component-form them--full-width">
+                                                <div class="form__title">
+                                                    Drop us a message
+                                                </div>
+                                                <form class="form__items" action="#">
+                                                    <div class="form__input ">
+                                                        <input type="text" placeholder="Your name">
+                                                        <input type="email" placeholder="Email Address">
+                                                        <input type="text" placeholder="Mobile number">
+                                                    </div>
+                                                    <div class="form__message">
+                                                        <textarea name="" id="" cols="10" rows="5"
+                                                            placeholder="Tell us about the idea for your project .."></textarea>
+                                                        <div class="form__button">
+                                                            <input type="submit" value="Send">
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                        <!-- COMPONENT FORM END -->
+
+                                        <a href="#0" class="cd-popup-close img-replace"></a>
+                                    </div> <!-- cd-popup-container -->
+                                </div> <!-- cd-popup -->
+                                <!-- partial -->
+
+                            </div>
+                            <!-- drop us a message end -->
+                        </div>
+
+                    </div>
+                    <!-- COMPONENT CONTENT END -->
+
+                    <!-- COMPONENT CONTENT END -->
+                </div>
+                <!-- SECTION BLOCK END -->
+            </div>
+        </div>
+        <!-- SECTION BLOCK END -->
+
+    </div>
+    <!-- COMPONENT SECTION CHAT STARTzz -->
+    <div class="component-section-chat">
+        <div class="section-chat__container">
+            <!-- COMPONENT CHAT START -->
+            <!-- partial:index.partial.html -->
+            <div class="floating-chat ">
+                <!-- enter expand to status open-->
+                <i> <img src="files/images/conversation.png" alt=""></i>
+                <div class="chat">
+
+                    <div class="header ">
+                        <span class="title"> Chat </span>
+                        <button>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <ul class="messages">
+                        <li class="other">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+                            illo omnis. Cumiusto ut sapiente!</li>
+                        <li class="self">Lorem ipsum dolor sit.</li>
+                        <li class="other">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li class="self">Lorem, ipsum dolor.</li>
+                    </ul>
+
+                    <div class="footer">
+                        <div class="text-box" contenteditable="true" disabled="true"></div>
+                        <button id="sendMessage">send</button>
+                    </div>
+                </div>
+            </div>
+            <!-- partial -->
+            <!-- COMPONENT CHAT END -->
+        </div>
+    </div>
+    <!-- COMPONENT SECTION CHAT END zz-->
+    <!-- COMPONENT SECTION FOOTER START -->
+    <div class="component-section-footer">
+        <!-- COMPONENT FOOTER START -->
+        <div class="component-footer">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            Eramint software house
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li>tanta ,97 hassan radwan ST <br>tanta</li>
+                                    <li><a href="#">+2 0101 985 0500</a></li>
+                                    <li><a href="home.html#contact__us__content">info@eramint.com</a></li>
+                                </ul>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            our services
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="app-development.html">mopile app development</a></li>
+                                    <li><a href="web-development.html">web application development</a></li>
+                                    <li><a href="graphic-design.html">graphic design</a></li>
+                                    <li><a href="marketing.html">marketing</a></li>
+                                    <li><a href="education.html">education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            about
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="About.html">company</a></li>
+                                    <li><a href="portfolio.html">portfolio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item theme--social">
+                    <div class="footer__links theme--social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT FOOTER END -->
+    </div>
+    <!-- COMPONENT SECTION FOOTER END -->
+    <script src="https://kit.fontawesome.com/780c8ebc4f.js"></script>
+    <script src="assets/js/switch-n-box.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'> </script>
+    <script src="assets/js/chat.js"></script>
+    <script src="assets/js/Popup.js"></script>
+</body>

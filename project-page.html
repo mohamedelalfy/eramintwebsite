@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- COMPONENT BACKGROUND START -->
+    <!--
+      To make background__main light colored add .theme--colored to .component-background
+    -->
+    <div class="component-background theme--colored">
+        <div class="background__header">
+        </div>
+        <div class="background__main">
+            <div class="background__shape id--1"></div>
+            <div class="background__shape id--2"></div>
+            <div class="background__shape id--3"></div>
+        </div>
+    </div>
+    <!-- COMPONENT BACKGROUND END -->
+    <!-- COMPONENT SECTION START -->
+    <div class="component-section">
+        <!-- COMPONENT HEADER INNER START -->
+        <!--
+                    To change logo replace value in .header-inner__logo img[src]
+                    To create menu make li inside ul and put .header-inner__menu__item in it
+                    If you want to add sub links put the menu of those links after .header-inner__menu__item and gave the parent li .type--has-children
+                    If you want to make li active give it .status--active
+                -->
+        <div class="component-header-inner">
+            <div class="header-inner__logo">
+                <a href="home.html"><img src="files/images/logo--colored.png" alt=""></a>
+            </div>
+            <div class="header-inner__menu" data-box="header-menu">
+                <div class="header-inner__menu__switch" data-switch="header-menu">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <ul>
+                    <li><a class="header-main__menu__item" href="home.html">home</a></li>
+                    <li><a class="header-main__menu__item" href="About.html">about</a></li>
+                    <li class="type--has-children">
+                            <button class="header-main__menu__item head">services</button>
+                            <ul>
+                            <li class="type--has-children">
+                                    <button class="header-main__menu__item"> <a class="header-main__menu__item" href="#development.html">development</a> </button> <!-- link to development.html-->
+                                    <ul>
+                                    <li><a class="header-main__menu__item" href="app-development.html">app
+                                            development</a></li>
+                                    <li><a class="header-main__menu__item" href="web-development.html">web
+                                            development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="header-main__menu__item" href="graphic-design.html">graphic design</a></li>
+                            <li><a class="header-main__menu__item" href="marketing.html">marketing</a></li>
+                            <li><span class="header-main__menu__item">organization structure</span></li>
+                            <li><a class="header-main__menu__item" href="education.html">education</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="header-main__menu__item" href="portfolio.html">portfolio</a></li>
+                    <li><a class="header-main__menu__item" href="blogs.html">blog</a></li>
+                    <li><a class="header-main__menu__item" href="home.html#contact__us__content">contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-inner__search" data-box="header-search">
+
+                <div class="box-container">
+
+                    <div class="searsh-box">
+                        <input type="text" name="" class="searsh-text" placeholder="i'm looking for ... " />
+                        <a class="searsh-btn">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT HEADER INNER END -->
+    </div>
+    <!-- COMPONENT SECTION END -->
+    <!-- COMPONENT SECTION CONTAINER START -->
+    <div class="component-section-container">
+        <!-- SLIDER START -->
+        <!-- Main container -->
+        <div class="component-slider-project-screens page">
+            <!-- Grid -->
+            <section class="slider">
+                <div class="slide slide--current">
+                    <div class="slide__mover">
+                        <div class="zoomer flex-center">
+                            <div class="zoomer--image">
+                                <img class="zoomer__image" src="files/images/Mockup.png" alt="iPhone" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__title">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__mover">
+                        <div class="zoomer flex-center">
+                            <div class="zoomer--image">
+                                <img class="zoomer__image" src="files/images/Mockup.png" alt="iPhone" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__title">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__mover">
+                        <div class="zoomer flex-center">
+                            <div class="zoomer--image">
+                                <img class="zoomer__image" src="files/images/Mockup.png" alt="iPhone" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__title">
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__mover">
+                        <div class="zoomer flex-center">
+                            <div class="zoomer--image">
+                                <img class="zoomer__image" src="files/images/Mockup.png" alt="iPhone" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__title">
+
+                    </div>
+                </div>
+                <nav class="slider__nav">
+                    <button class="button button--nav-prev"><i class="fa fa-chevron-left fa-6"
+                            aria-hidden="true"></i><span class="text-hidden">Previous product</span></button>
+                    <button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View
+                            details</span></button>
+                    <button class="button button--nav-next"><i class="fa fa-chevron-right fa-6"
+                            aria-hidden="true"></i><span class="text-hidden">Next product</span></button>
+                </nav>
+            </section>
+            <!-- /slider-->
+            <section class="content ">
+                <div class="content__item" id="content-1">
+                    <img class="content__item-img rounded-right" src="files/images/MacBook.png"
+                        alt="Apple Watch Content" />
+                    <div class="content__item-inner">
+                        <h2>The iPhone 6</h2>
+                        <h3>Incredible performance for powerful apps</h3>
+                        <p>Built on 64-bit desktop-class architecture, the new A8 chip delivers more power, even while
+                            driving a larger display. The M8 motion coprocessor efficiently gathers data from advanced
+                            sensors and a new barometer. And with increased battery life, iPhone 6 lets you do more, for
+                            longer than ever.</p>
+                        <p><a href="https://www.apple.com/iphone-6/technology/">Learn more about this technology
+                                &xrarr;</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="content__item" id="content-2">
+                    <img class="content__item-img rounded-right" src="images/ipad-content.jpg"
+                        alt="iPad Mini Content" />
+                    <div class="content__item-inner">
+                        <h2>The iPad Mini</h2>
+                        <h3>Desktop-class architecture without a desktop</h3>
+                        <p>Don’t let its size fool you. iPad mini 3 is powered by an A7 chip with 64-bit desktop-class
+                            architecture. A7 delivers amazing processing power without sacriﬁcing battery life. So you
+                            get
+                            incredible performance in a device you can take with you wherever you go.</p>
+                        <p><a href="https://www.apple.com/ipad-mini-3/performance/">Learn more about Performance
+                                &xrarr;</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="content__item" id="content-3">
+                    <img class="content__item-img rounded-right" src="images/macbook-content.jpg"
+                        alt="MacBook Content" />
+                    <div class="content__item-inner">
+                        <h2>The MacBook</h2>
+                        <h3>It's the future of the notebook</h3>
+                        <p>With the new MacBook, we set out to do the impossible: engineer a full-size experience into
+                            the
+                            lightest and most compact Mac notebook ever. That meant reimagining every element to make it
+                            not
+                            only lighter and thinner but also better. The result is more than just a new notebook. It's
+                            the
+                            future of the notebook.</p>
+                        <p><a href="https://www.apple.com/macbook/design/">Learn more about the design &xrarr;</a></p>
+                    </div>
+                </div>
+                <div class="content__item" id="content-4">
+                    <img class="content__item-img rounded-right" src="images/imac-content.jpg" alt="iMac Content" />
+                    <div class="content__item-inner">
+                        <h2>The iMac</h2>
+                        <h3>Engineered to the very last detail</h3>
+                        <p>Every new Mac comes with Photos, iMovie, GarageBand, Pages, Numbers, and Keynote. So you can
+                            be
+                            creative with your photos, videos, music, documents, spreadsheets, and presentations right
+                            from
+                            the start. You also get great apps for email, surfing the web, sending texts, and making
+                            FaceTime calls — there’s even an app for finding new apps.</p>
+                        <p><a href="https://www.apple.com/imac/built-in-apps/">Learn more about the iMac's features
+                                &xrarr;</a></p>
+                    </div>
+                </div>
+                <div class="content__item" id="content-5">
+                    <img class="content__item-img rounded-right" src="images/apple-watch-content.png"
+                        alt="Apple Watch Content" />
+                    <div class="content__item-inner">
+                        <h2>AFWME</h2>
+                        <h3>Entirely new ways to stay in touch</h3>
+                        <p>Apple Watch makes all the ways you're used to communicating more convenient. And because it
+                            sits
+                            right on your wrist, it can add a physical dimension to alerts and notifications. For
+                            example,
+
+                        </p>
+                        <p><a href="https://www.apple.com/watch/new-ways-to-connect/">Learn more about new ways to
+                                connect
+                                &xrarr;</a></p>
+                    </div>
+                </div>
+                <button class="button button--close"><i class="icon icon--circle-cross"></i><span
+                        class="text-hidden">Close
+                        content</span></button>
+            </section>
+        </div>
+        <!-- SLIDER END -->
+    </div>
+    <!-- COMPONENT SECTION CONTAINER END -->
+    <!-- COMPONENT SECTION CONTAINER START -->
+    <div class="component-section-container project-page">
+        <!-- COMPONENT CONTENT START -->
+        <div class="component-content">
+
+            <div class="content__title">
+                AFWME
+            </div>
+            <div class="content__description page">
+                African Fashion Week Middle East aims to bring about opportunity and connections within the African
+                Middle East market. We aspire to create a platform for designers, show case their work and connect them
+                to new markets and move away from stereotypical aesthetics. As Africa fashion week Middle East, we look
+                to promote designers with either African heritage or connected to the continent. We seek the unique,
+                acentric, untold stories and bring awareness to the vast creatives of Africa. We aim to add value to
+                designers’ journey and empower them to flourish in our respective industry.
+            </div>
+        </div>
+        <!-- COMPONENT CONTENT END -->
+    </div>
+    <!-- COMPONENT SECTION CONTAINER END -->
+    <div class="component-section-chat">
+        <div class="section-chat__container">
+            <!-- COMPONENT CHAT START -->
+            <!-- partial:index.partial.html -->
+            <div class="floating-chat ">
+                <!-- enter expand to status open-->
+                <i> <img src="files/images/conversation.png" alt=""></i>
+                <div class="chat">
+
+                    <div class="header ">
+                        <span class="title"> Chat </span>
+                        <button>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <ul class="messages">
+                        <li class="other">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+                            illo omnis. Cumiusto ut sapiente!</li>
+                        <li class="self">Lorem ipsum dolor sit.</li>
+                        <li class="other">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li class="self">Lorem, ipsum dolor.</li>
+                    </ul>
+
+                    <div class="footer">
+                        <div class="text-box" contenteditable="true" disabled="true"></div>
+                        <button id="sendMessage">send</button>
+                    </div>
+                </div>
+            </div>
+            <!-- partial -->
+            <!-- COMPONENT CHAT END -->
+        </div>
+    </div>
+    <!-- COMPONENT SECTION CHAT END -->
+    <!-- COMPONENT SECTION FOOTER START -->
+    <div class="component-section-footer">
+        <!-- COMPONENT FOOTER START -->
+        <div class="component-footer">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            Eramint software house
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li>tanta ,97 hassan radwan ST <br>tanta</li>
+                                    <li><a href="#">+2 0101 985 0500</a></li>
+                                    <li><a href="home.html#contact__us__content">info@eramint.com</a></li>
+                                </ul>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            our services
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="app-development.html">mopile app development</a></li>
+                                    <li><a href="web-development.html">web application development</a></li>
+                                    <li><a href="graphic-design.html">graphic design</a></li>
+                                    <li><a href="marketing.html">marketing</a></li>
+                                    <li><a href="education.html">education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            about
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="About.html">company</a></li>
+                                    <li><a href="portfolio.html">portfolio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item theme--social">
+                    <div class="footer__links theme--social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT FOOTER END -->
+    </div>
+    <!-- COMPONENT SECTION FOOTER END -->
+    <script src="assets/js/switch-n-box.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="assets/js/switch-n-box.js"></script>
+    <script src="assets/js/plugin/modernizr.custom.js"></script>
+    <script src="assets/js/plugin/classie.js"></script>
+    <script src="assets/js/plugin/dynamics.min.js"></script>
+    <script src="assets/js/plugin/main.js"></script>
+    <script src="assets/js/switch-n-box.js"></script>
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'>
+    </script>
+    <script src="assets/js/chat.js"></script>
+</body>

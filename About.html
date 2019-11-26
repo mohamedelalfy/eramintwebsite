@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- COMPONENT BACKGROUND START -->
+    <!--
+      To make background__main light colored add .theme--colored to .component-background
+    -->
+    <div class="component-background theme--colored">
+        <div class="background__header">
+        </div>
+        <div class="background__main">
+            <div class="background__shape id--1"></div>
+            <div class="background__shape id--2"></div>
+            <div class="background__shape id--3"></div>
+        </div>
+    </div>
+    <!-- COMPONENT BACKGROUND END -->
+    <!-- COMPONENT SECTION START -->
+    <div class="component-section">
+        <!-- COMPONENT HEADER INNER START -->
+        <!--
+			To change logo replace value in .header-inner__logo img[src]
+			To create menu make li inside ul and put .header-inner__menu__item in it
+			If you want to add sub links put the menu of those links after .header-inner__menu__item and gave the parent li .type--has-children
+			If you want to make li active give it .status--active
+		-->
+        <div class="component-header-inner">
+            <div class="header-inner__logo">
+                <a href="home.html"><img src="files/images/logo--colored.png" alt=""></a>
+            </div>
+            <div class="header-inner__menu" data-box="header-menu">
+                <div class="header-inner__menu__switch" data-switch="header-menu">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <ul>
+                    <li><a class="header-main__menu__item" href="home.html">home</a></li>
+                    <li class="status--active"><a class="header-main__menu__item" href="About.html">about</a></li>
+                    <li class="type--has-children">
+                            <button class="header-main__menu__item head">services</button>
+                        <ul>
+                            <li class="type--has-children">
+                                    <button class="header-main__menu__item"> <a class="header-main__menu__item" href="#development.html">development</a> </button> <!-- link to development.html-->
+                                    <ul>
+                                    <li><a class="header-main__menu__item" href="app-development.html">app
+                                            development</a></li>
+                                    <li><a class="header-main__menu__item" href="web-development.html">web
+                                            development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="header-main__menu__item" href="graphic-design.html">graphic design</a></li>
+                            <li><a class="header-main__menu__item" href="marketing.html">marketing</a></li>
+                            <li><span class="header-main__menu__item">organization structure</span></li>
+                            <li><a class="header-main__menu__item" href="education.html">education</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="header-main__menu__item" href="portfolio.html">portfolio</a></li>
+                    <li><a class="header-main__menu__item" href="blogs.html">blog</a></li>
+                    <li><a class="header-main__menu__item" href="home.html#contact__us__content">contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-inner__search" data-box="header-search">
+
+                <div class="box-container">
+
+                    <div class="searsh-box">
+                        <input type="text" name="" class="searsh-text" placeholder="i'm looking for ... " />
+                        <a class="searsh-btn">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT HEADER INNER END -->
+    </div>
+    <!-- COMPONENT SECTION END -->
+    <!-- COMPONENT SECTION CONTAINER START -->
+    <div class="component-section-container">
+        <!-- COMPONENT PAGE INFORMATION START -->
+        <div class="page__information">
+            <div class="page__information__title main-title text--center">About </div>
+            <div class=" page__information__image">
+                <img src="files/images/Eramint-Logo-w.png" alt="">
+            </div>
+        </div>
+        <!-- COMPONENT PAGE INFORMATION END -->
+    </div>
+    <!-- COMPONENT SECTION CONTAINER END -->
+    <!-- COMPONENT SECTION BLOCKS START -->
+    <!--
+      The .component-section-blocks can have more than one .section-block
+      .section-block:nth-child(odd) are background-color: white
+      .section-block:nth-child(even) are background-color: light colored
+      to reverse that you must add .theme--colored to .component-section-blocks
+      The .section-block__items can have more than one .section-block__item
+      .section-block__item:nth-child(odd) are background-color: as .section-block parent 
+      .section-block__item:nth-child(even) are background-color: light colored if (odd) is white and white if (odd) is light colored
+      The .section-block__item have padding by default if you want to make fluid add .theme--fluid
+    -->
+
+    <div class="component-section-blocks">
+        <!-- SECTION BLOCK START -->
+        <div class="section-block">
+            <div class="section-block__items">
+                <!-- SECTION BLOCK ITEM START -->
+                <div class="section-block__item">
+                    <!-- COMPONENT DIVISION START -->
+                    <!--
+      To add division title put your text in .division__title and if you want to make any word bold put it in span
+    -->
+                    <div class="component-division">
+                        <div class="division__header">
+                            <div class="division__title">
+                                who are we
+                            </div>
+                        </div>
+                        <!-- COMPONENT CONTENT START -->
+                        <div class="component-content">
+                            <div class="content__description">
+                                EraMint is a start-up software and marketing agency started at the beginning of 2016 at
+                                Tanta, Egypt witha growing team with different experience in design, programming,
+                                customer service, sales and marketing field. Serving big names in a variety of sectors
+                                like home appliances, desserts, fast food, ceramic and others. In the recent days we
+                                made some deals in KSA in car protection and hospitality sectors.
+
+                            </div>
+                            <!-- start code  -->
+                            <div class="serv">
+                                <div class="component-section-about">
+                                    <div class="section-about__item">
+                                        <div class="section-about__item__icon">
+                                            <img src="./files/images/company-vision.png" alt="">
+                                        </div>
+                                        <div class="section-about__item__content">
+                                            <div class="section-about__item__title">
+                                                Our Vision
+                                            </div>
+
+                                            <div class="section-about__item__description">
+                                                Delivering results-oriented brand marketing programs and ublic relations
+                                                campaigns that enhance our c lients’ awareness, improve their sales and
+                                                foster their growth.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-about__item">
+                                        <div class="section-about__item__icon">
+                                            <img src="./files/images/goal.png" alt="">
+                                        </div>
+                                        <div class="section-about__item__content">
+                                            <div class="section-about__item__title">
+                                                Our Mission
+                                            </div>
+                                            <div class="section-about__item__description">
+                                                To provide innovative and effective integrated brand marketing and
+                                                public
+                                                relations solutions which help our clients grow their businesses and
+                                                realize
+                                                their marketing goals.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- End coding -->
+                        </div>
+                        <!-- COMPONENT CONTENT END -->
+                    </div>
+                    <!-- COMPONENT DIVISION END -->
+                </div>
+                <!-- SECTION BLOCK ITEM END -->
+
+
+
+                <!-- SECTION BLOCK ITEM START -->
+                <div class="section-block__item">
+                    <div class="component-division">
+                        <div class="division__header">
+                            <div class="division__title">
+                                why us
+                            </div>
+                        </div>
+                        <!-- COMPONENT CONTENT START -->
+                        <div class="component-content">
+                            <div class="content__description">
+                                Eramint is a digital business consultant agency that reinvents business digital for
+                                upcoming business leaders who want to break market records
+                            </div>
+                        </div>
+                        <!-- COMPONENT CONTENT END -->
+                    </div>
+                    <!--  -->
+
+
+                    <!-- COMPONENT DIVISION END -->
+                    <!-- COMPONENT SECTION ABOUT START -->
+                    <div class="component-section-about">
+                        <div class="section-about__item">
+                            <div class="section-about__item__icon">
+                                <i class="fas fa-cogs fa-3x"></i>
+                            </div>
+                            <div class="section-about__item__content">
+                                <div class="section-about__item__title">
+                                    FULL-SERVICE <br>COMPANY
+                                </div>
+
+                                <div class="section-about__item__description">
+                                    We don't just design websites or logos we can help with every aspect of your brand
+                                    online.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-about__item">
+                            <div class="section-about__item__icon">
+                                <i class="fas fa-briefcase fa-3x"> </i>
+                            </div>
+                            <div class="section-about__item__content">
+                                <div class="section-about__item__title">
+                                    FIXED <br>PACKAGES
+                                </div>
+                                <div class="section-about__item__description">
+                                    We have fixed packages for every service we provide so you will not find hidden
+                                    extra fees as we
+                                    believe in transparency.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-about__item">
+                            <div class="section-about__item__icon">
+                                <i class="fas fa-users fa-3x"></i>
+                            </div>
+                            <div class="section-about__item__content">
+                                <div class="section-about__item__title">
+                                    FREE <br>CONSULTATION
+                                </div>
+                                <div class="section-about__item__description">
+                                    Before you make a deal with us you can get 2 hours free consultation service by
+                                    phone, skype or
+                                    personal meeting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-about__item">
+                            <div class="section-about__item__icon">
+                                <i class="fas fa-comments fa-3x"></i>
+                            </div>
+                            <div class="section-about__item__content">
+                                <div class="section-about__item__title">
+                                    TALK DIRECTLY TO <br>THE EXPERTS
+                                </div>
+                                <div class="section-about__item__description">
+                                    While your project is in progress you get to talk directly with the people designing
+                                    and building
+                                    your website.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- COMPONENT SECTION ABOUT END -->
+                </div>
+                <!-- SECTION BLOCK ITEM END -->
+
+            </div>
+            <!-- SECTION BLOCK END -->
+        </div>
+    </div>
+    <!-- SECTION BLOCK END -->
+    </div>
+
+
+    <!-- COMPONENT SECTION BLOCKS END -->
+<!-- COMPONENT SECTION CHAT STARTzz -->
+<div class="component-section-chat">
+    <div class="section-chat__container">
+        <!-- COMPONENT CHAT START -->
+        <!-- partial:index.partial.html -->
+        <div class="floating-chat ">
+            <!-- enter expand to status open-->
+            <i> <img src="files/images/conversation.png" alt=""></i>
+            <div class="chat">
+
+                <div class="header ">
+                    <span class="title"> Chat </span>
+                    <button>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <ul class="messages">
+                    <li class="other">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+                        illo omnis. Cumiusto ut sapiente!</li>
+                    <li class="self">Lorem ipsum dolor sit.</li>
+                    <li class="other">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li class="self">Lorem, ipsum dolor.</li>
+                </ul>
+
+                <div class="footer">
+                    <div class="text-box" contenteditable="true" disabled="true"></div>
+                    <button id="sendMessage">send</button>
+                </div>
+            </div>
+        </div>
+        <!-- partial -->
+        <!-- COMPONENT CHAT END -->
+    </div>
+</div>
+<!-- COMPONENT SECTION CHAT END zz-->
+    </div>
+    <!-- COMPONENT SECTION FOOTER END -->
+   <!-- COMPONENT SECTION FOOTER START -->
+   <div class="component-section-footer">
+    <!-- COMPONENT FOOTER START -->
+    <div class="component-footer">
+        <div class="footer__items">
+            <div class="footer__item">
+                <div class="footer__block">
+                    <div class="footer__block__title">
+                        Eramint software house
+                    </div>
+                    <div class="footer__block__content">
+                        <div class="footer__links">
+                            <ul>
+                                <li>tanta ,97 hassan radwan ST <br>tanta</li>
+                                <li><a href="#">+2 0101 985 0500</a></li>
+                                <li><a href="home.html#contact__us__content">info@eramint.com</a></li>
+                            </ul>
+                        </div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__block">
+                    <div class="footer__block__title">
+                        our services
+                    </div>
+                    <div class="footer__block__content">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="app-development.html">mopile app development</a></li>
+                                <li><a href="web-development.html">web application development</a></li>
+                                <li><a href="graphic-design.html">graphic design</a></li>
+                                <li><a href="marketing.html">marketing</a></li>
+                                <li><a href="education.html">education</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__block">
+                    <div class="footer__block__title">
+                        about
+                    </div>
+                    <div class="footer__block__content">
+                        <div class="footer__links">
+                            <ul>
+                                <li><a href="About.html">company</a></li>
+                                <li><a href="portfolio.html">portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item theme--social">
+                <div class="footer__links theme--social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COMPONENT FOOTER END -->
+</div>
+<!-- COMPONENT SECTION FOOTER END -->
+    <script src="https://kit.fontawesome.com/780c8ebc4f.js"></script>
+    <script src="assets/js/switch-n-box.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'> </script>
+    <script src='assets/js/navbar-components.js'></script>
+    <script src="assets/js/chat.js"></script>
+</body>

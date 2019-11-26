@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- COMPONENT BACKGROUND START -->
+    <!--
+      To make background__main light colored add .theme--colored to .component-background
+    -->
+    <div class="component-background theme--colored page--education">
+        <div class="background__header">
+        </div>
+        <div class="background__main">
+            <div class="background__shape id--1"></div>
+            <div class="background__shape id--2"></div>
+            <div class="background__shape id--3"></div>
+        </div>
+    </div>
+    <!-- COMPONENT BACKGROUND END -->
+    <!-- COMPONENT SECTION START -->
+    <div class="component-section">
+        <!-- COMPONENT HEADER INNER START -->
+        <!--
+			To change logo replace value in .header-inner__logo img[src]
+			To create menu make li inside ul and put .header-inner__menu__item in it
+			If you want to add sub links put the menu of those links after .header-inner__menu__item and gave the parent li .type--has-children
+			If you want to make li active give it .status--active
+		-->
+        <div class="component-header-inner">
+            <div class="header-inner__logo">
+                <a href="home.html"><img src="files/images/logo--colored.png" alt=""></a>
+            </div>
+            <div class="header-inner__menu" data-box="header-menu">
+                <div class="header-inner__menu__switch" data-switch="header-menu">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <ul>
+                    <li><a class="header-main__menu__item" href="home.html">home</a></li>
+                    <li><a class="header-main__menu__item" href="About.html">about</a></li>
+                    <li class="type--has-children">
+                            <button class="header-main__menu__item head">services</button>
+                            <ul>
+                            <li class="type--has-children">
+                                    <button class="header-main__menu__item"> <a class="header-main__menu__item" href="#development.html">development</a> </button> <!-- link to development.html-->
+                                    <ul>
+                                    <li><a class="header-main__menu__item" href="app-development.html">app
+                                            development</a></li>
+                                    <li><a class="header-main__menu__item" href="web-development.html">web
+                                            development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="header-main__menu__item" href="graphic-design.html">graphic design</a></li>
+                            <li><a class="header-main__menu__item" href="marketing.html">marketing</a></li>
+                            <li><span class="header-main__menu__item">organization structure</span></li>
+                            <li><a class="header-main__menu__item" href="education.html">education</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="header-main__menu__item" href="portfolio.html">portfolio</a></li>
+                    <li><a class="header-main__menu__item" href="blogs.html">blog</a></li>
+                    <li><a class="header-main__menu__item" href="home.html#contact__us__content">contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-inner__search" data-box="header-search">
+
+                <div class="box-container">
+
+                    <div class="searsh-box">
+                        <input type="text" name="" class="searsh-text" placeholder="i'm looking for ... " />
+                        <a class="searsh-btn">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT HEADER INNER END -->
+    </div>
+    <!-- COMPONENT SECTION END -->
+    <!-- COMPONENT SECTION CONTAINER START -->
+    <div class="component-section-container">
+        <!-- COMPONENT PAGE INFORMATION START -->
+        <div class="page__information">
+            <div class="page__information__title main-title text--center">Education </div>
+            <div class="page__information__heading h-1"> we provide everything <br> <span class="h-2"> your business
+                    needs</span></div>
+            <div class="page__information__description">Our designs are intended to inspire action and created with the
+                intention to convert to potential customers. No matter what the project, our approach focuses on working
+                best for your brand. From logos to billboards to packaging for products, we bring concepts, ideas and
+                stories helping your customers inspire about your brand.
+            </div>
+        </div>
+        <!-- COMPONENT PAGE INFORMATION END -->
+    </div>
+    <!-- COMPONENT SECTION CONTAINER END -->
+    <!-- COMPONENT SECTION BLOCKS START -->
+    <!--
+      The .component-section-blocks can have more than one .section-block
+      .section-block:nth-child(odd) are background-color: white
+      .section-block:nth-child(even) are background-color: light colored
+      to reverse that you must add .theme--colored to .component-section-blocks
+      The .section-block__items can have more than one .section-block__item
+      .section-block__item:nth-child(odd) are background-color: as .section-block parent 
+      .section-block__item:nth-child(even) are background-color: light colored if (odd) is white and white if (odd) is light colored
+      The .section-block__item have padding by default if you want to make fluid add .theme--fluid
+    -->
+    <div class="component-section-blocks page--education">
+        <!-- SECTION BLOCK START -->
+        <div class="section-block education--page">
+            <div class="section-block__items">
+                <!-- COMPONENT SECTION EDUCATION START -->
+                <div class="component-sections-education ">
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+                            <img src="files/images/feature/EducationalConsultant.png"
+                                alt="Educational Consultant image not found">
+                        </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title">Educational Consultant</div>
+                            <div class="sections-education__item__description">
+                                <p>Transform learning, increase educator
+                                    capacity, improve student
+                                    achievement , Coaches Academy, Support For States, Principal Leadership ·</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+                            <img src="files/images/feature/SmartLearning.png" alt=" Smart Learning image not found">
+                        </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title"> Smart Learning</div>
+                            <div class="sections-education__item__description">As a new era smartization in education,
+                                which
+                                many Arab countries
+                                began to implement gradually...</div>
+                        </div>
+                    </div>
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+                            <img src="files/images/feature/artificial-intelligence.png"
+                                alt="Ai in Education image not found">
+                        </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title"> Ai in Education </div>
+                            <div class="sections-education__item__description">The World Economic Forum estimates that
+                                65
+                                percent of children
+                                entering primary school today will work in completely new jobs that don’t exist yet ...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+
+                            <img src="files/images/feature/Training.png" alt="Training image not found">
+
+                        </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title"> Training</div>
+                            <div class="sections-education__item__description">Organizations across the globe come to us
+                                to
+                                develop people who
+                                maximize the returns on technology. In addition to our topical training courses ...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+                            <img src="files/images/feature/E-Content.png" alt="E- Content image not found">
+                        </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title"> E- Content</div>
+                            <div class="sections-education__item__description">It encompasses eTexts and digital
+                                learning
+                                resources. These could
+                                be digital textbooks, workbooks, articles, videos, or multimedia ...</div>
+                        </div>
+                    </div>
+
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+                            <img src="files/images/feature/AdvancedEducationTechnology.png"
+                                alt="Advanced Education Technology image not found"> </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title"> Advanced Education Technology</div>
+                            <div class="sections-education__item__description">Teachers who want to become specialized
+                                or
+                                expand the subject
+                                matter there qualified to teach may pursue an advanced education degree ...</div>
+                        </div>
+                    </div>
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+                            <img src="files/images/feature/LearningManagementSystem.png"
+                                alt="Learning Management System (LMS) image not found">
+                        </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title"> Learning Management System (LMS)</div>
+                            <div class="sections-education__item__description">For the administration, documentation,
+                                tracking, reporting and
+                                delivery of educational courses or training programs ...</div>
+                        </div>
+                    </div>
+                    <div class="sections-education__item">
+                        <div class="sections-education__item__icon">
+                            <img src="files/images/feature/SchoolManagementSystem.png"
+                                alt="School Management System (SMS) image not found">
+                        </div>
+                        <div class="sections-education__item__content">
+                            <div class="sections-education__item__title"> School Management System (SMS)</div>
+                            <div class="sections-education__item__description">Technology advancement has brought a
+                                brilliant change is
+                                education system. Todays school, colleges ...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMPONENT SECTION EDUCATION START -->
+            </div>
+        </div>
+        <!-- SECTION BLOCK END -->
+    </div>
+    <!-- COMPONENT SECTION BLOCKS END -->
+    <!-- COMPONENT SECTION CHAT START -->
+<!-- COMPONENT SECTION CHAT STARTzz -->
+<div class="component-section-chat">
+    <div class="section-chat__container">
+        <!-- COMPONENT CHAT START -->
+        <!-- partial:index.partial.html -->
+        <div class="floating-chat ">
+            <!-- enter expand to status open-->
+            <i> <img src="files/images/conversation.png" alt=""></i>
+            <div class="chat">
+
+                <div class="header ">
+                    <span class="title"> Chat </span>
+                    <button>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <ul class="messages">
+                    <li class="other">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+                        illo omnis. Cumiusto ut sapiente!</li>
+                    <li class="self">Lorem ipsum dolor sit.</li>
+                    <li class="other">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li class="self">Lorem, ipsum dolor.</li>
+                </ul>
+
+                <div class="footer">
+                    <div class="text-box" contenteditable="true" disabled="true"></div>
+                    <button id="sendMessage">send</button>
+                </div>
+            </div>
+        </div>
+        <!-- partial -->
+        <!-- COMPONENT CHAT END -->
+    </div>
+</div>
+<!-- COMPONENT SECTION CHAT END zz-->
+    <!-- COMPONENT SECTION FOOTER START -->
+    <div class="component-section-footer">
+        <!-- COMPONENT FOOTER START -->
+        <div class="component-footer">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            Eramint software house
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li>tanta ,97 hassan radwan ST <br>tanta</li>
+                                    <li><a href="#">+2 0101 985 0500</a></li>
+                                    <li><a href="home.html#contact__us__content">info@eramint.com</a></li>
+                                </ul>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            our services
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="app-development.html">mopile app development</a></li>
+                                    <li><a href="web-development.html">web application development</a></li>
+                                    <li><a href="graphic-design.html">graphic design</a></li>
+                                    <li><a href="marketing.html">marketing</a></li>
+                                    <li><a href="education.html">education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__block">
+                        <div class="footer__block__title">
+                            about
+                        </div>
+                        <div class="footer__block__content">
+                            <div class="footer__links">
+                                <ul>
+                                    <li><a href="About.html">company</a></li>
+                                    <li><a href="portfolio.html">portfolio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item theme--social">
+                    <div class="footer__links theme--social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- COMPONENT FOOTER END -->
+    </div>
+    <!-- COMPONENT SECTION FOOTER END -->
+    <script src="assets/js/switch-n-box.js"></script>
+    <script src="https://kit.fontawesome.com/780c8ebc4f.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'>
+    </script>
+    <script src="assets/js/chat.js"></script>
+</body>
